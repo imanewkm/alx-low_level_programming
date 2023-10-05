@@ -9,8 +9,7 @@
 
 int main(void)
 {
-	puts("\"Programmming is like building a multilingual puzzle ");
+	puts("\"Programmming is like building a multilingual puzzle");
 
-	getchar();
 	return (0);
 }
