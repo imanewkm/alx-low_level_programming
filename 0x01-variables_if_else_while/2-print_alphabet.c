@@ -9,13 +9,16 @@
  */
 int main(void)
 {
-	char alphabet;
+	char alphabet = 'a';
 
-	alphabet = 'a';
 	while (alphabet <= 'z')
 	{
-		printf("%c", alphabet);
+		alphabet = tolower(alphabet);
+		putchar(alphabet);
 		alphabet++;
 	}
+
+	putchar ('\n');
+
 	return (0);
 }
