@@ -9,11 +9,13 @@
  */
 int main(void)
 {
-	int x;
+	char alphabet;
 
-	for (int x = 'a'; x <= 'z'; x++)
+	alphabet = 'a';
+	while (alphabet <= 'z')
 	{
-		putchar(tolower(x));
+		printf("%c\n", alphabet);
+		alphabet++;
 	}
 	return (0);
 }
