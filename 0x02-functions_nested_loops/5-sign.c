@@ -2,23 +2,25 @@
 /**
  * print_sign - print the sign of num
  *
- * @n: the int to check
+ * @c: the int to check
  *
  * Return: 1 and + if +, 0 if null, -1 and - if -
  */
-int print_sign(int n)
+int print_sign(int c)
 {
-	if (n > 0)
+	if (c > 0)
 	{
-		_putchar ('+');
+		_putchar (43);
 		return (1);
 	}
-	else if (n == 0)
+	else if (c < 0)
 	{
-		_putchar ('0');
+		_putchar (45);
+		return (-1);
 	}
 	else
 	{
-		_putchar ('-');
+		_putchar(48);
 		return (0);
 	}
+}
