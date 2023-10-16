@@ -6,3 +6,4 @@
 5-rev_string.c > function that reverses a string
 6-puts2.c > printing all char of string
 7-puts_half.c > print half of the string
+8-print_array > n elements of an array
