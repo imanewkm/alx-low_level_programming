@@ -3,3 +3,4 @@
 2-strncpy > copies the content of str1 into str2
 3-strcmp > compares two strings
 4-rev_array > reverses the elements of a string
+5-string_toupper > from lowercase to uppercase
