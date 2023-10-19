@@ -1,12 +1,12 @@
 #include "main.h"
 /**
  * string_toupper - from lowercase to uppercase
- * @str: string
- * Return: 0
+ * @str: pointer
+ * Return: n
  */
 char *string_toupper(char *str)
 {
-	int i;
+	int i = 0;
 
 	while (str[i] != '\0')
 	{
