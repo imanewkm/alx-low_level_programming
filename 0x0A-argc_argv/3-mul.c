@@ -8,8 +8,8 @@
  */
 int main(int argc, char **argv)
 {
-	int mul = 0;
-	int num1, num2;
+	unsigned int mul = 0;
+	unsigned int num1, num2;
 
 	if (argc != 3)
 	{
