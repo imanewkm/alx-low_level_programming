@@ -28,5 +28,6 @@ char *create_array(unsigned int size, char c)
 		i++;
 	}
 	str[i] = '\0';
+	free(str);
 	return (str);
 }
