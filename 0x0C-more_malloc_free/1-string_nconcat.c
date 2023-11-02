@@ -33,6 +33,14 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	{
 		return (NULL);
 	}
+	if (s1 == NULL)
+	{
+		s1 = "";
+	}
+	if (s2 == NULL)
+	{
+		s2 = "";
+	}
 	if (str != NULL)
 	{
 		for (i = 0; s1[i] != '\0' && s1 != NULL; i++)
