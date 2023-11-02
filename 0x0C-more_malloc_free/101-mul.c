@@ -21,7 +21,7 @@ void _puts(char *str)
  * @s: char
  * Return: 0
  */
-int _atoi(char *s)
+int _atoi(const char *s)
 {
 	int sign = 1;
 	unsigned long int resp = 0, firstnum, i;
@@ -66,11 +66,11 @@ void print_int(unsigned long int n)
  * @argv: char
  * Return: 0
  */
-int main(int argc, char *argv[])
+int main(int argc, char const *argv[])
 {
 	if (argc != 3)
 	{
-		_puts("Error\n");
+		_puts("Error \n");
 		exit(98);
 	}
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
