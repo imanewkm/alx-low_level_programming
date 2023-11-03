@@ -81,7 +81,7 @@ int main(int argc, char const *argv[])
 
 	if (argc != 3)
 	{
-		_puts("Error ");
+		_puts("Error\n");
 		exit(98);
 	}
 	print_int(_atoi(argv[1]) * _atoi(argv[2]));
