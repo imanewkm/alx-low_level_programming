@@ -45,19 +45,28 @@ int _atoi(const char *s)
  * @n: int
  * Return: 0
  */
-void print_int(unsigned long int n)
+void print_int(int n)
 {
-	unsigned long int divisor = 1, i = 0, resp;
+	unsigned int num, divisor = 1;
 
-	while (n / divisor > 9)
+	if (n < 0)
 	{
-		i++;
+		_putchar('-');
+		num = -n;
+	}
+	else
+	{
+		num = n;
+	}
+	while (num / divisor > 9)
+	{
 		divisor *= 10;
 	}
-	for (; divisor >= 1; n %= divisor, divisor /= 10)
+	while (divisor)
 	{
-		resp = n / divisor;
-		_putchar('0' + resp);
+		_putchar('0' + num / divisor);
+		num %= divisor;
+		divisor /= 10;
 	}
 }
 /**
