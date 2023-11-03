@@ -45,9 +45,9 @@ int _atoi(const char *s)
  * @n: int
  * Return: 0
  */
-void print_int(int n)
+void print_int(long int n)
 {
-	unsigned int num, divisor = 1;
+	unsigned long int num, divisor = 1;
 
 	if (n < 0)
 	{
