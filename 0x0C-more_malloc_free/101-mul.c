@@ -68,6 +68,8 @@ void print_int(unsigned long int n)
  */
 int main(int argc, char const *argv[])
 {
+	(void)argc;
+
 	if (argc != 3)
 	{
 		_puts("Error ");
