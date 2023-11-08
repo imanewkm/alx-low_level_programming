@@ -4,17 +4,13 @@
 /**
  * print_name - prints name
  * @name: str
- * @f: function`
+ * @f: function
  * Return: void
  */
 void print_name(char *name, void (*f)(char *))
 {
-	int i = 0;
-
-	while (name[i] != '\0')
+	if (name && f)
 	{
-		f(name + i);
-		i++;
+		f(name);
 	}
-	f("\n");
 }
