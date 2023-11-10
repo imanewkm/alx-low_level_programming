@@ -3,7 +3,12 @@
 
 #include <stdio.h>
 #include <stdarg.h>
-
+/**
+ * struct printer - prints
+ * @symbol: symbol
+ * @print: print
+ * Return: 0
+ */
 typedef struct printer
 {
 	char *symbol;
