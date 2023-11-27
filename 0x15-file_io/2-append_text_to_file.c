@@ -8,30 +8,26 @@
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
-	int fd;
-	ssize_t byteswrite;
-	ssize_t length;
+	int o, w, length = 0;
 
 	if (!filename)
 	{
 		return (-1);
 	}
-	fd = open(filename, O_WRONLY | O_APPEND);
-	if (fd == -1)
+	if (text_content)
+	{
+		for (length = 0; text_content[length];)
+		{
+			length++;
+		}
+	}
+	o = open(filename, O_WRONLY | O_APPEND);
+	w = write(o, text_content, length);
+
+	if (o == -1 || w == -1)
 	{
 		return (-1);
 	}
-	length = 0;
-	if (text_content[length])
-	{
-		length++;
-	}
-	byteswrite = write(fd, text_content, length);
-	if (byteswrite == -1 || byteswrite != length)
-	{
-		close(fd);
-		return (-1);
-	}
-	close(fd);
+	close(o);
 	return (1);
 }
