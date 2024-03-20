@@ -1,7 +1,6 @@
 <Doctype html>
 <html lang="eng">
 <head>
-        <title>makefile</title>
 </head>
 <body>
         <h1>The makefile command</h1>
